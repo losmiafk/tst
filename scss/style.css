@@ -739,7 +739,7 @@ footer .copyright-footer #poweredby span {
     margin-right: -40px !important;
   }
   p::after {
-    display: none !important;
+    display: none;
   }
   h1::after {
     display: none !important;
@@ -753,8 +753,31 @@ footer .copyright-footer #poweredby span {
   .about-section .left-about img {
     width: 100%;
   }
+  .distribucija-text h1::after {
+    display: block !important;
+  }
   .brendovi-section .col-md-2 {
     width: 33.3%;
+  }
+  .number-section #numberpod::after {
+    display: block !important;
+  }
+  footer .cmpny-info {
+    display: table !important;
+    margin: auto !important;
+  }
+  footer img {
+    margin-bottom: 30px;
+  }
+  footer .cmpny-options {
+    display: table !important;
+    margin: auto !important;
+    border: none;
+  }
+  footer .cmpny-social {
+    display: table !important;
+    margin: auto !important;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 425px) and (max-width: 1400px) {

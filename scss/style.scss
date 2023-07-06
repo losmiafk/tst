@@ -792,7 +792,7 @@ footer{
         }
     }
     p::after{
-        display: none !important;
+        display: none;
     }
     h1::after{display: none !important;}
     h2::after{
@@ -808,17 +808,43 @@ footer{
             }
         }
     }
+    .distribucija-text{
+        h1{
+            &::after{
+                display: block !important;
+            }
+        }
+    }
     .brendovi-section{
         .col-md-2{
             width: 33.3%;
         }
     }
+    .number-section{
+        #numberpod{
+            &::after{
+                display: block !important;
+            }
+        }
+    }
     footer{
-        // .cmpny-info{
-        //     display: grid;
-        //     justify-content: center;
-        //     border-left: none;
-        // }
+            .cmpny-info{
+                display: table !important;
+                margin: auto !important;
+            }
+            img{
+                margin-bottom: 30px;
+            }
+            .cmpny-options{
+                display: table !important;
+                margin: auto !important;
+                border: none;
+            }
+            .cmpny-social{
+                display: table !important;
+                margin: auto !important;
+                text-align: center;
+            }
     }
 }
 @media only screen and (min-width:425px) and (max-width :1400px)
